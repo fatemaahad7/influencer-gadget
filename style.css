@@ -1,5 +1,11 @@
 /*------------ Fonts -------------*/
+
+/*----- Full Body ------*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/*------- Footer ------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 
 
 /*------------ Common Styles ------------*/
@@ -27,7 +33,7 @@ main {
     padding: 40px 80px;
 }
 .headline {
-    color: rgb(32, 54, 54);
+    color: #00001b;
     font-size: 3em;
 }
 .color-dodgerblue {
@@ -124,4 +130,21 @@ main {
     color: crimson;
     font-size: 2em;
     margin-right: 10px;
+}
+
+
+/*------------ Footer ------------*/
+footer {
+    width: 100%;
+    height: 200px;
+    color: white;
+    background-color: #00001b;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 30px;
+}
+.fa-brands.logo {
+    font-size: 1.5em;
+    margin-left: 10px;
 }
