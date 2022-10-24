@@ -98,3 +98,30 @@ main {
     text-decoration: none;
     color: crimson;
 }
+
+
+/*------------ Best Stop ------------*/
+.best-stop {
+    margin: 50px 0px;
+}
+.services {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 0px 80px;
+}
+.service {
+    /* border: 1px solid; */
+    width: 200px;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+}
+.service a {
+    text-decoration: none;
+    color: crimson;
+}
+.fa-solid.icon {
+    color: crimson;
+    font-size: 2em;
+    margin-right: 10px;
+}
