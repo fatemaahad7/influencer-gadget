@@ -20,7 +20,24 @@ main {
     align-items: center;
 }
 hr {
-    border: 1px solid black;
+    border: 1px solid lightgray;
+    width: 70%;
+    margin-top: 20px;
+}
+
+
+/*--------------- Header -------------*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    padding-left: 20px;
 }
 
 
@@ -146,6 +163,10 @@ footer {
     text-align: center;
     margin-top: 50px;
     padding-top: 30px;
+}
+footer a {
+    text-decoration: none;
+    color: white;
 }
 .fa-brands.logo {
     font-size: 1.5em;
