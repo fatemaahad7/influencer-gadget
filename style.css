@@ -78,7 +78,10 @@ nav a {
     padding-top: 50px;
     padding-left: 90px;
 }
-
+.top-banner:hover img {
+    transform: rotate(360deg);
+    transition: transform 3s linear;
+}
 
 
 /*------------ Popular Collection ------------*/
