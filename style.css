@@ -71,7 +71,6 @@ nav a {
 }
 .top-banner {
     position: relative;
-    overflow: hidden;   
 }
 .top-banner img {
     width: 75%;
@@ -139,7 +138,6 @@ nav a {
     gap: 0px 80px;
 }
 .service {
-    /* border: 1px solid; */
     width: 200px;
     font-size: 1.2em;
     display: flex;
@@ -174,4 +172,49 @@ footer a {
 .fa-brands.logo {
     font-size: 1.5em;
     margin-left: 10px;
+}
+
+
+/*-------------------- Media Queries --------------------*/
+
+/*----- SmartPhone ------*/
+@media only screen and (max-width:688px) {
+    /* Header */
+    nav a {
+        display: none;
+    }
+
+
+    /* Top section */
+    .top-container {
+        flex-direction: column;
+    }
+    .top-text {
+        text-align: center;
+        padding: 0;
+    }
+    .headline {
+        font-size: 1.5em;
+    }
+    .top-banner img {
+        width: 100%;
+        padding: 0;
+    }
+
+
+    /* Popular */
+    .products {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px 0px;
+    }
+
+
+    /* Best-Stop */
+    .services {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+    }
+    
 }
