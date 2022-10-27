@@ -38,13 +38,16 @@ nav a {
     text-decoration: none;
     color: black;
     font-size: 1.2em;
-    padding-left: 20px;
+    margin-left: 20px;
 }
-
+.nav-phone-tab {
+    visibility: hidden;
+}
 
 /*------------ Top ------------*/
 .top-container {
     display: flex;
+    align-items: center;
     width: 100%;
 }
 .top-text , .top-banner {
@@ -102,11 +105,8 @@ nav a {
     border-radius: 10px;
     padding: 24px;
     box-shadow: 3px 3px 5px lightgray;
-    /* border: 1px solid; */
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
 }
 .product-name {
     margin-bottom: 0;
@@ -198,21 +198,26 @@ footer a {
         margin-bottom: 20px;
     }
     nav {
-        display: block;
-        text-align: center;
+        padding: 20px;
     }
     nav a {
+        margin-left: 10px;
+    }
+    .nav-pc {
         display: none;
+    }
+    .nav-phone-tab {
+        visibility: visible;
     }
 
 
-    /* Top section */
+    /* Top */
     .top-container {
         flex-direction: column;
     }
     .top-text {
         text-align: center;
-        padding: 0px;
+        padding: 10px;
     }
     .headline {
         font-size: 1.5em;
@@ -238,4 +243,53 @@ footer a {
         gap: 20px;
     }
     
+}
+
+
+/* Tablet */
+@media only screen and (min-width:689px) and (max-width:992px){
+    .nav-pc {
+        display: none;
+    }
+    /* Header */
+    .nav-phone-tab {
+        visibility: visible;
+    }
+
+    /* Top */
+    .top-container {
+        flex-direction: column;
+        width: 80%;
+    }
+    .top-text {
+        text-align: center;
+        /* padding: 10px; */
+    }
+    .headline {
+        font-size: 2.2em;
+    }
+
+
+    /* Popular */
+    .popular-collection {
+        width: 100%;
+    }
+    .products {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+    .button-reverse {
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    /* Best-Stop */
+    .services {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px 40px;
+    }
+
 }
