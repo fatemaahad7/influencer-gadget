@@ -108,6 +108,9 @@ nav a {
     display: flex;
     flex-direction: column;
 }
+.product:hover {
+    background-color: lavender;
+}
 .product-name {
     margin-bottom: 0;
 }
